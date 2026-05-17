@@ -393,49 +393,86 @@ h3 {
 }
 
 .trust-strip {
-  padding: 28px 0;
-  background: var(--wine);
-  color: #fff;
+  padding: 68px 0 58px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.55), rgba(245, 236, 224, 0.72));
+  border-top: 1px solid rgba(111, 29, 27, 0.08);
+  border-bottom: 1px solid rgba(111, 29, 27, 0.08);
+}
+
+.trust-shell {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.trust-heading,
+.trust-item {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(76, 49, 27, 0.06);
+}
+
+.trust-heading {
+  padding: 26px;
+}
+
+.trust-heading h2 {
+  font-size: clamp(1.28rem, 2.4vw, 2rem);
+}
+
+.trust-heading p:not(.eyebrow) {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 14px;
 }
 
 .trust-item {
-  padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--radius-small);
-  background: rgba(255, 255, 255, 0.06);
-  transition: transform 0.25s ease, background 0.25s ease;
+  padding: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .trust-item:hover {
   transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--soft-shadow);
+  border-color: rgba(111, 29, 27, 0.22);
 }
 
 .trust-item span {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #e5c38d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: var(--wine);
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .trust-item strong {
   display: block;
-  font-size: 1.02rem;
+  color: var(--ink);
+  font-size: 1rem;
 }
 
 .trust-item p {
   margin: 8px 0 0;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
 }
 
 .about,
@@ -877,6 +914,10 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .trust-shell {
+    grid-template-columns: 1fr;
+  }
+
   .hero-grid,
   .split-section,
   .restaurant-grid,
@@ -1031,13 +1072,14 @@ h3 {
   }
 
   .trust-strip {
-    padding: 18px 0;
+    padding: 42px 0;
   }
 
   .trust-grid {
     gap: 10px;
   }
 
+  .trust-heading,
   .trust-item {
     padding: 16px;
   }
