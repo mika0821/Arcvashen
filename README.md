@@ -17,6 +17,7 @@ This is a clean, professional, mobile-first static website for a hotel and resta
 - Room cards with photo gallery popup on the same screen
 - Swipe support on mobile for room photos
 - Contact information section (no form)
+- Extra feature/trust section removed for a cleaner homepage
 - Working back-to-top button
 
 ## How to edit
