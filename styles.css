@@ -27,10 +27,11 @@ html {
 
 body {
   margin: 0;
+  font-size: 15px;
   font-family: Georgia, "Times New Roman", serif;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.52;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -109,7 +110,7 @@ a,
 }
 
 .brand-text {
-  font-size: 1.08rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -121,7 +122,7 @@ a,
   gap: 28px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 .main-nav a {
@@ -167,10 +168,10 @@ a,
   background: transparent;
   color: var(--muted);
   border-radius: 999px;
-  padding: 8px 10px;
+  padding: 7px 9px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.84rem;
+  font-size: 0.72rem;
   transition: color 0.2s ease, background 0.2s ease;
 }
 
@@ -266,25 +267,25 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.32rem, 6vw, 5.35rem);
+  font-size: clamp(1.9rem, 4.8vw, 4.25rem);
   letter-spacing: -0.055em;
   max-width: 720px;
 }
 
 h2 {
-  font-size: clamp(1.85rem, 4vw, 3.35rem);
+  font-size: clamp(1.48rem, 3.1vw, 2.55rem);
   letter-spacing: -0.035em;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.08rem;
 }
 
 .hero-text {
   max-width: 650px;
   margin: 24px 0 0;
   color: var(--muted);
-  font-size: 1.13rem;
+  font-size: 0.9rem;
 }
 
 .hero-actions {
@@ -296,16 +297,16 @@ h3 {
 }
 
 .button {
-  min-height: 48px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 13px 22px;
+  padding: 11px 19px;
   border: 1px solid transparent;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 0.94rem;
+  font-size: 0.86rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
@@ -402,20 +403,20 @@ h3 {
   margin-bottom: 10px;
   color: #e5c38d;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   letter-spacing: 0.12em;
 }
 
 .trust-item strong {
   display: block;
-  font-size: 1.15rem;
+  font-size: 1.02rem;
 }
 
 .trust-item p {
   margin: 8px 0 0;
   color: rgba(255, 255, 255, 0.78);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 .about,
@@ -433,7 +434,7 @@ h3 {
 }
 
 .section-copy p {
-  font-size: 1.04rem;
+  font-size: 0.94rem;
 }
 
 .classic-box,
@@ -471,7 +472,7 @@ h3 {
 }
 
 .section-heading p:not(.eyebrow) {
-  font-size: 1.04rem;
+  font-size: 0.94rem;
   margin: 16px 0 0;
 }
 
@@ -521,7 +522,7 @@ h3 {
 .room-card p {
   margin: 0 0 18px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 .room-meta {
@@ -540,7 +541,7 @@ h3 {
   border: 1px solid rgba(184, 139, 74, 0.25);
   padding: 6px 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
@@ -569,7 +570,7 @@ h3 {
 
 .restaurant-list span {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
 
 .gallery-grid {
@@ -628,12 +629,12 @@ h3 {
 .address-box span {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
 }
 
 .address-box strong {
   color: var(--wine);
-  font-size: 1.15rem;
+  font-size: 1.02rem;
 }
 
 .site-footer {
@@ -697,6 +698,10 @@ h3 {
 }
 
 @media (max-width: 780px) {
+  body {
+    font-size: 14px;
+  }
+
   :root {
     --header-height: 70px;
   }
@@ -716,7 +721,7 @@ h3 {
   }
 
   .brand-text {
-    font-size: 0.98rem;
+    font-size: 0.9rem;
     max-width: 132px;
     white-space: nowrap;
     overflow: hidden;
@@ -771,7 +776,7 @@ h3 {
   }
 
   .main-nav a {
-    padding: 16px 18px;
+    padding: 13px 16px;
     border-bottom: 1px solid var(--line);
     color: var(--ink);
   }
@@ -786,7 +791,7 @@ h3 {
 
   .hero {
     min-height: auto;
-    padding: 48px 0 44px;
+    padding: 40px 0 36px;
   }
 
   .hero-grid,
@@ -798,7 +803,7 @@ h3 {
   .hero-text,
   .section-copy p,
   .section-heading p:not(.eyebrow) {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .hero-actions {
@@ -844,7 +849,7 @@ h3 {
   .location,
   .rooms,
   .gallery {
-    padding: 62px 0;
+    padding: 50px 0;
   }
 
   .section-heading {
@@ -865,7 +870,7 @@ h3 {
   }
 
   .room-card-body {
-    padding: 18px;
+    padding: 16px;
   }
 
   .restaurant-list div,
@@ -882,7 +887,7 @@ h3 {
   }
 
   .location-card {
-    padding: 22px;
+    padding: 18px;
   }
 
   .footer-inner {
@@ -894,11 +899,11 @@ h3 {
 
 @media (max-width: 390px) {
   h1 {
-    font-size: 2.08rem;
+    font-size: 1.76rem;
   }
 
   h2 {
-    font-size: 1.66rem;
+    font-size: 1.38rem;
   }
 
   .brand-text {
@@ -906,11 +911,11 @@ h3 {
   }
 
   .language-switch button {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
 
   .room-meta span {
-    font-size: 0.73rem;
+    font-size: 0.68rem;
   }
 }
 
