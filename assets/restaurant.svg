@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620">
+  <defs>
+    <linearGradient id="rbg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff7ea"/><stop offset="1" stop-color="#ead6bd"/></linearGradient>
+  </defs>
+  <rect width="800" height="620" fill="url(#rbg)"/>
+  <rect x="70" y="70" width="660" height="400" rx="26" fill="#fffaf2" stroke="#b88b4a" stroke-width="5"/>
+  <rect x="132" y="128" width="536" height="80" rx="40" fill="#6f1d1b"/>
+  <text x="400" y="178" text-anchor="middle" fill="#fffaf2" font-family="Georgia, serif" font-size="38" font-weight="700">RESTAURANT</text>
+  <ellipse cx="400" cy="382" rx="210" ry="52" fill="#6f1d1b" opacity="0.92"/>
+  <rect x="205" y="352" width="390" height="40" rx="20" fill="#8a4a32"/>
+  <path d="M310 385v130M490 385v130" stroke="#6f1d1b" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="400" cy="319" r="70" fill="#fffaf2" stroke="#b88b4a" stroke-width="6"/>
+  <circle cx="400" cy="319" r="42" fill="#f2dfc4"/>
+  <path d="M291 287v82M274 288v82M308 288v82M274 326h34" stroke="#6f1d1b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M519 286c32 24 22 69-11 83V286" fill="none" stroke="#6f1d1b" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="226" cy="254" r="28" fill="#e5c38d" opacity="0.8"/>
+  <circle cx="574" cy="254" r="28" fill="#e5c38d" opacity="0.8"/>
+  <path d="M0 530 C170 490 300 525 420 500 C565 470 690 500 800 460 L800 620 L0 620 Z" fill="#6b7d5b" opacity="0.18"/>
+</svg>

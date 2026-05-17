@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Ararat Heritage logo">
+  <rect width="96" height="96" rx="24" fill="#fffaf2"/>
+  <rect x="7" y="7" width="82" height="82" rx="20" fill="none" stroke="#b88b4a" stroke-width="3"/>
+  <path d="M24 65c7-18 16-28 24-28s17 10 24 28" fill="none" stroke="#6f1d1b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M31 65c5-10 11-16 17-16s12 6 17 16" fill="none" stroke="#b88b4a" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="48" cy="28" r="7" fill="#6f1d1b"/>
+  <path d="M41 78h14" stroke="#2d251d" stroke-width="4" stroke-linecap="round"/>
+</svg>

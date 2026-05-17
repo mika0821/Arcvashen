@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A clean, professional hotel and restaurant website template for Armenia." />
+  <title>Ararat Heritage | Hotel & Restaurant</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to homepage">
+        <img src="assets/logo.svg" alt="Hotel logo" />
+        <span class="brand-text" data-i18n="brandName">Ararat Heritage</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#rooms" data-i18n="navRooms">Rooms</a>
+        <a href="#restaurant" data-i18n="navRestaurant">Restaurant</a>
+        <a href="#location" data-i18n="navLocation">Location</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language switcher">
+        <button type="button" data-lang="hy" class="active">Հայ</button>
+        <button type="button" data-lang="ru">Рус</button>
+        <button type="button" data-lang="en">Eng</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-panel">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Hotel & Restaurant in Armenia</p>
+          <h1 data-i18n="heroTitle">A calm place for comfortable stays and warm meals.</h1>
+          <p class="hero-text" data-i18n="heroText">A professional, welcoming hotel and restaurant created for guests who value cleanliness, quiet service, and traditional hospitality.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#rooms" data-i18n="heroButtonRooms">View rooms</a>
+            <a class="button secondary" href="#restaurant" data-i18n="heroButtonRestaurant">Restaurant</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal delay-1" aria-label="Hotel preview">
+          <img src="assets/hotel-entrance.svg" alt="Illustration of a classic hotel entrance" />
+          <div class="hero-card-note">
+            <strong data-i18n="heroCardTitle">Comfortable stay</strong>
+            <span data-i18n="heroCardText">Quiet rooms, fresh food, respectful service</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Hotel features">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <span>01</span>
+          <strong data-i18n="trustOneTitle">Clean rooms</strong>
+          <p data-i18n="trustOneText">Prepared carefully for every guest.</p>
+        </div>
+        <div class="trust-item reveal delay-1">
+          <span>02</span>
+          <strong data-i18n="trustTwoTitle">Restaurant on-site</strong>
+          <p data-i18n="trustTwoText">Breakfast, dinner, and Armenian dishes.</p>
+        </div>
+        <div class="trust-item reveal delay-2">
+          <span>03</span>
+          <strong data-i18n="trustThreeTitle">Good for families</strong>
+          <p data-i18n="trustThreeText">Peaceful atmosphere for all ages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container split-section">
+        <div class="section-copy reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">About the place</p>
+          <h2 data-i18n="aboutTitle">Hospitality with a calm and classic character.</h2>
+          <p data-i18n="aboutTextOne">The hotel is designed for guests who prefer a clean, respectful, and peaceful atmosphere instead of loud or overly modern design.</p>
+          <p data-i18n="aboutTextTwo">Guests can stay in comfortable rooms, enjoy meals in the restaurant, and easily understand the main information from a very simple mobile-friendly website.</p>
+        </div>
+        <div class="classic-box reveal delay-1">
+          <img src="assets/interior.svg" alt="Classic hotel interior illustration" />
+          <div class="classic-box-content">
+            <h3 data-i18n="aboutBoxTitle">Simple. Clean. Respectful.</h3>
+            <p data-i18n="aboutBoxText">The visual style uses warm colors, readable text, and soft movement for a professional feeling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms section-panel" id="rooms">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="roomsEyebrow">Rooms</p>
+          <h2 data-i18n="roomsTitle">Choose the room that fits your visit.</h2>
+          <p data-i18n="roomsIntro">Room names, prices, and details are easy to edit later. For now, the website introduces each room category clearly.</p>
+        </div>
+        <div class="room-grid" id="roomGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="restaurant" id="restaurant">
+      <div class="container restaurant-grid">
+        <div class="restaurant-image reveal">
+          <img src="assets/restaurant.svg" alt="Restaurant table illustration" />
+        </div>
+        <div class="section-copy reveal delay-1">
+          <p class="eyebrow" data-i18n="restaurantEyebrow">Restaurant</p>
+          <h2 data-i18n="restaurantTitle">Warm meals in a quiet restaurant atmosphere.</h2>
+          <p data-i18n="restaurantText">The restaurant can present breakfast, lunch, dinner, Armenian dishes, and private family meals. The layout is clean so older guests can quickly find the information they need.</p>
+          <div class="restaurant-list">
+            <div>
+              <strong data-i18n="restaurantPointOneTitle">Traditional menu</strong>
+              <span data-i18n="restaurantPointOneText">Local dishes and familiar flavors.</span>
+            </div>
+            <div>
+              <strong data-i18n="restaurantPointTwoTitle">Family friendly</strong>
+              <span data-i18n="restaurantPointTwoText">Calm seating and respectful service.</span>
+            </div>
+            <div>
+              <strong data-i18n="restaurantPointThreeTitle">Events possible</strong>
+              <span data-i18n="restaurantPointThreeText">Suitable for small gatherings.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-panel" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="galleryEyebrow">Atmosphere</p>
+          <h2 data-i18n="galleryTitle">A website that feels calm from the first look.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card reveal">
+            <img src="assets/room-detail.svg" alt="Room detail illustration" />
+            <h3 data-i18n="galleryOneTitle">Restful rooms</h3>
+          </article>
+          <article class="gallery-card reveal delay-1">
+            <img src="assets/dining-detail.svg" alt="Dining detail illustration" />
+            <h3 data-i18n="galleryTwoTitle">Warm dining</h3>
+          </article>
+          <article class="gallery-card reveal delay-2">
+            <img src="assets/armenia-view.svg" alt="Armenian landscape illustration" />
+            <h3 data-i18n="galleryThreeTitle">Armenian setting</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container location-card reveal">
+        <div>
+          <p class="eyebrow" data-i18n="locationEyebrow">Location</p>
+          <h2 data-i18n="locationTitle">Located in Armenia.</h2>
+          <p data-i18n="locationText">Replace this placeholder with the exact address when you are ready. A map section can also be added later.</p>
+        </div>
+        <div class="address-box">
+          <span data-i18n="addressLabel">Address</span>
+          <strong data-i18n="addressValue">Armenia — exact address here</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong data-i18n="brandName">Ararat Heritage</strong>
+        <p data-i18n="footerText">Hotel & Restaurant in Armenia</p>
+      </div>
+      <a href="#top" data-i18n="backToTop">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
