@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A clean, professional hotel and restaurant website template for Armenia." />
-  <title>Ararat Heritage | Hotel & Restaurant</title>
+  <meta name="description" content="Arcvashen hotel and restaurant website template for Armenia." />
+  <title>Arcvashen | Hotel & Restaurant</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -15,29 +15,34 @@
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Go to homepage">
         <img src="assets/logo.svg" alt="Hotel logo" />
-        <span class="brand-text" data-i18n="brandName">Ararat Heritage</span>
+        <span class="brand-text" data-i18n="brandName">Arcvashen</span>
       </a>
-
-      <button class="menu-button" type="button" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
 
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#rooms" data-i18n="navRooms">Rooms</a>
         <a href="#restaurant" data-i18n="navRestaurant">Restaurant</a>
         <a href="#location" data-i18n="navLocation">Location</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
 
-      <div class="language-switch" aria-label="Language switcher">
-        <button type="button" data-lang="hy" class="active">Հայ</button>
-        <button type="button" data-lang="ru">Рус</button>
-        <button type="button" data-lang="en">Eng</button>
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language switcher">
+          <button type="button" data-lang="hy" class="active">Հայ</button>
+          <button type="button" data-lang="ru">Рус</button>
+          <button type="button" data-lang="en">Eng</button>
+        </div>
+
+        <button class="menu-button" type="button" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <div class="menu-scrim" id="menuScrim" hidden></div>
 
   <main id="main">
     <section class="hero section-panel">
@@ -105,7 +110,7 @@
         <div class="section-heading reveal">
           <p class="eyebrow" data-i18n="roomsEyebrow">Rooms</p>
           <h2 data-i18n="roomsTitle">Choose the room that fits your visit.</h2>
-          <p data-i18n="roomsIntro">Room names, prices, and details are easy to edit later. For now, the website introduces each room category clearly.</p>
+          <p data-i18n="roomsIntro">Tap any room to open its photos and swipe through more images on the same screen.</p>
         </div>
         <div class="room-grid" id="roomGrid" aria-live="polite"></div>
       </div>
@@ -174,17 +179,70 @@
         </div>
       </div>
     </section>
+
+    <section class="contact section-panel" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Contact information</h2>
+          <p data-i18n="contactIntro">This section is for phone numbers and simple contact details only. You can replace the placeholders with the real details later.</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card reveal">
+            <span data-i18n="contactPhoneLabel">Phone</span>
+            <strong data-i18n="contactPhoneValue">+374 00 00 00 00</strong>
+            <p data-i18n="contactPhoneHint">Main reception number</p>
+          </article>
+          <article class="contact-card reveal delay-1">
+            <span data-i18n="contactMobileLabel">Mobile / WhatsApp</span>
+            <strong data-i18n="contactMobileValue">+374 00 00 00 00</strong>
+            <p data-i18n="contactMobileHint">For quick booking questions</p>
+          </article>
+          <article class="contact-card reveal delay-2">
+            <span data-i18n="contactEmailLabel">Email</span>
+            <strong data-i18n="contactEmailValue">info@arcvashen.am</strong>
+            <p data-i18n="contactEmailHint">General information and requests</p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <strong data-i18n="brandName">Ararat Heritage</strong>
+        <strong data-i18n="brandName">Arcvashen</strong>
         <p data-i18n="footerText">Hotel & Restaurant in Armenia</p>
       </div>
-      <a href="#top" data-i18n="backToTop">Back to top</a>
+      <button class="footer-top-link" type="button" id="footerTopLink" data-i18n="backToTop">Back to top</button>
     </div>
   </footer>
+
+  <div class="room-modal" id="roomModal" aria-hidden="true">
+    <div class="room-modal-backdrop" data-modal-close></div>
+    <div class="room-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalRoomTitle">
+      <button class="room-modal-close" type="button" id="modalCloseButton" aria-label="Close gallery">×</button>
+      <div class="room-modal-top">
+        <div>
+          <p class="eyebrow" id="modalRoomLabel">Room gallery</p>
+          <h3 id="modalRoomTitle">Room</h3>
+        </div>
+        <div class="room-modal-counter" id="modalCounter">1 / 3</div>
+      </div>
+      <div class="room-modal-stage">
+        <button class="room-modal-arrow" type="button" id="modalPrev" aria-label="Previous image">‹</button>
+        <div class="room-modal-image-wrap" id="modalImageWrap">
+          <img id="modalImage" src="" alt="Room photo" />
+        </div>
+        <button class="room-modal-arrow" type="button" id="modalNext" aria-label="Next image">›</button>
+      </div>
+      <div class="room-modal-thumbs" id="modalThumbs"></div>
+      <div class="room-modal-meta" id="modalMeta"></div>
+    </div>
+  </div>
+
+  <button class="back-to-top-button" type="button" id="backToTopButton" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
